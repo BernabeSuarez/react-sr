@@ -46,10 +46,16 @@ const VoiceToText = () => {
         </button>
       </div>
       <div className="flex justify-between w-full sm:w-[600px] items-center mb-2">
-        <button className="bg-green-500 text-white" onClick={startListening}>
+        <button
+          className="bg-green-500 text-white hover:bg-green-800"
+          onClick={startListening}
+        >
           Grabar
         </button>
-        <button className="bg-red-500 text-white" onClick={stopListening}>
+        <button
+          className="bg-red-500 text-white hover:bg-red-800"
+          onClick={stopListening}
+        >
           Detener
         </button>
       </div>
