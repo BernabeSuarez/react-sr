@@ -29,7 +29,7 @@ const VoiceToText = () => {
         Transcripcion voz a texto online
       </h2>
       <div className="w-[600px]  min-h-96 bg-white rounded-lg text-black p-4">
-        {transcript}
+        {transcript ? transcript : "Comienze a grabar..."}
       </div>
       <div className="flex justify-between w-full items-center mt-2 mb-2">
         <button
