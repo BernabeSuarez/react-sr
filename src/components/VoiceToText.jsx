@@ -24,14 +24,14 @@ const VoiceToText = () => {
     return null;
   }
   return (
-    <main className="m-auto p-4 flex flex-col justify-center items-center ">
-      <h2 className="text-3xl font-bold mb-8">
+    <main className="m-auto px-1 sm:p-12 flex flex-col justify-center items-center w-screen">
+      <h2 className="text-xl sm:text-3xl font-bold mb-8">
         Transcripciones de voz a texto
       </h2>
-      <div className="w-[600px]  min-h-96 bg-white rounded-lg text-black p-4">
+      <div className=" w-full sm:w-[600px] min-h-96 bg-white rounded-lg text-black p-4 mb-2">
         {transcript ? transcript : "Comienze a grabar..."}
       </div>
-      <div className="flex justify-between w-full items-center mt-2 mb-2">
+      <div className="flex justify-between w-full sm:w-[600px] items-center mt-2 mb-6">
         <button
           onClick={setCopied}
           className="px-3 py-2 text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm text-center dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
@@ -45,7 +45,7 @@ const VoiceToText = () => {
           Borrar texto
         </button>
       </div>
-      <div className="flex justify-between w-full items-center mb-2">
+      <div className="flex justify-between w-full sm:w-[600px] items-center mb-2">
         <button className="bg-green-500 text-white" onClick={startListening}>
           Grabar
         </button>

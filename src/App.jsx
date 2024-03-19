@@ -2,7 +2,7 @@ import VoiceToText from "./components/VoiceToText";
 
 function App() {
   return (
-    <main className="flex justify-center items-center p-12 w-screen h-screen">
+    <main className=" base_app flex justify-center items-center p-8 w-screen h-screen">
       <VoiceToText />
     </main>
   );
